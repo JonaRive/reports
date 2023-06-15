@@ -6,7 +6,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 
 
-function DepartStudent(){
+function Pier(){
 
     
 const labels = [ 'Palencia','Villa Nueva','Jalapa','Chimaltenango','San Marcos','Mixco','Mita','Zacapa','Quiche','Xela',]
@@ -45,7 +45,7 @@ const data = {
         borderWidth: 1,
         hoverBackgroundColor: 'rgba(0, 255, 01, 0, 2)',
         hoverBorderColor: '#FF0000',
-        data: [500,750,825,450,845,600,1500,1000,945,240 ],
+        data: [ 50,140,600,750,1500,1200,900,250,750,600],
         
     }
 ]};
@@ -80,4 +80,4 @@ return (
     
 }
 
-export default DepartStudent
+export default Pier

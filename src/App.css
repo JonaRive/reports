@@ -1,0 +1,42 @@
+
+.flex{
+    display: flex;
+}
+
+.navbar{
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid   #c7c8c9;
+}
+
+.sidebar  {
+    
+    width: 15rem;
+    height: calc( 100vh - 52px );
+    border-right: 2px solid #c7c8c9 ;
+    
+ 
+
+ }
+
+.ul-sidebar  {
+    list-style: none;
+    padding: 1rem 2rem;  
+    
+}
+
+.li-sidebar {
+    margin-bottom: 1rem;
+    
+    
+}
+
+.a-sidebar {
+    text-decoration: none;
+    &.active {
+        background-color: #c6c7c8;
+    
+}
+
+}
+

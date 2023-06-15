@@ -1,38 +1,37 @@
-/*import ReportPerYear from './components/ReportPerYear';
-import DepartStudent from './components/DepartStudents';
-import YearSemMon from './components/YearSemMon';
-import StudentCenter from './components/StudentsCenter'; */
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import SideBar from "./components/SideBar";
 
+import Linear from './components/charts/Linear';
+import Pie from './components/charts/Pie';
 
-import Graf1 from './docuPdf/Graph1';
+import './App.css';
+
 
 
 
 function App() {
 
   
-
-
   return (
-     /* <div className='container-xl'>
-      <h2 className='mt-5 display-2'>Grafica 1</h2>
-      <div className="bg-light mx-auto px-2 mt-3" style={{width:"1000px", height:"500px"}}>  <ReportPerYear /> </div>
-    
-   
-      <h2 className='mt-5 display-2'>Grafica 2 </h2>
-      <div className='bg-light mx-auto px-2 mt-3' style={{width:"1000px", height:"500px"}}> <YearSemMon /> </div>
-
-      <h2 className='mt-5 display-2'>Grafica 3</h2>
-      <div className="bg-light mx-auto px-2 mt-3 " style={{width:"500px", height:"500px"}}> <DepartStudent />  </div>
-
-       <h2 className='mt-5 display-2'>Grafica 4</h2>
-       <div className='bg-light mx-auto px-2 mt-3' style={{width:"1000px", height:"500px"}}> <StudentCenter /> </div>
-
-
-    </div>*/
+    <>
     
     
-    <Graf1 />
+     <NavBar /> 
+     <div className="flex"> 
+      <SideBar />
+        <div className="content"> 
+        <Routes>
+            <Route path="/linear" exact={true} Component={Linear} />
+            <Route path="/pie" exact={true} Component={Pie} />    
+          </Routes>
+        </div>
+      </div>
+     
+
+      </>
+    
+    
     
       
     
