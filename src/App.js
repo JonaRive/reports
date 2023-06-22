@@ -2,41 +2,30 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import SideBar from "./components/SideBar";
 
-import Linear from "./components/charts/Linear";
-import Pie from "./components/charts/PieCustom";
+
+import Exemple_Bar from "./views/dashboard/example_Bar";
+import Exemple_Line from "./views/dashboard/example_Line";
+import Exemple_Pie from "./views/dashboard/example_Pie";
 
 import "./App.css";
-const labelsPie = [
-  "Palencia",
-  "Villa Nueva",
-  "Jalapa",
-  "Chimaltenango",
-  "San Marcos",
-  "Mixco",
-  "Mita",
-  "Zacapa",
-  "Quiche",
-  "Xela",
-];
+import Exemple_Area from "./views/dashboard/example_Area";
 
-const dataPie = [50, 140, 600, 750, 1500, 1200, 900, 250, 750, 600];
+
+
+
+
 function App() {
   return (
     <>
       <NavBar />
       <div className='flex'>
-        <SideBar />
-        <div className='content'>
+      <SideBar />
+      <div className='content'>
           <Routes>
-            <Route path='/linear' exact={true} Component={Linear} />
-            <Route
-              path='/pie'
-              exact={true}
-              Component={Pie}
-              title={"Departamento"}
-              labels={labelsPie}
-              data={dataPie}
-            />
+            <Route path='/line' exact={true}   Component={Exemple_Line} />
+            <Route path='/pie'  exact={true}  Component={Exemple_Pie}/>
+            <Route path='/bar'  exact={true}  Component={Exemple_Bar}/>
+            <Route path='/area' exact={true}   Component={Exemple_Area} />
           </Routes>
         </div>
       </div>
